@@ -1,0 +1,33 @@
+# Tarea2
+Desarrollo de la tarea N°2 de preparación para el primer parcial
+
+#include <iostream>
+using namespace std;
+
+
+int main()
+
+{
+    char Nota;
+
+    cout << "Ingrese su calificacion, A B C D F: ";
+    cin >> Nota;
+
+    if (Nota==65)       // 65 corresponde a la "A" en el codigo ascii
+    cout << "Excelente, todo ha sido perfecto" << endl; 
+
+    if (Nota==66)       // 66 corresponde a la "B" en el codigo ascii
+    cout << "Bueno, todo ha sido casi perfecto" << endl;
+
+    if (Nota==67)       // 66 corresponde a la "C" en el codigo ascii
+    cout << "Regular, Debes Esforzarte" << endl;
+
+    if (Nota==68)       // 67 corresponde a la "D" en el codigo ascii
+    cout << "Mal, Debes estudiar y mejorar" << endl;
+
+    if (Nota==70)       // 70 corresponde a la "F" en el codigo ascii
+    cout << "Deficiente, Debes tomar clases adicionales" << endl;
+
+
+ return 0;
+}
