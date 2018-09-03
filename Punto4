@@ -1,0 +1,27 @@
+#include <iostream>
+
+using namespace std;
+
+ 	char letra;
+ 	int a;
+	int num;
+	int linea;
+	
+int main()
+
+ {
+		cout << "Ingrese la letra: ";
+ 		cin >> letra;
+  	cout << "Ingrese un numero: ";
+    cin >> num;
+	
+   for (a=1;a<=num; a++)
+   	{
+		for(linea=1;linea<=num;linea++)
+		cout<< letra <<" "; 
+		cout<< endl;
+	  }
+	 system("pause");	
+ 	
+	return 0;
+}
