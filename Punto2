@@ -1,1 +1,26 @@
+#include <iostream>
 
+using namespace std;
+
+int a,b,c,d,i;
+
+int main (  )
+
+{
+	cout <<"ingrese su numero entero: ";
+	cin >> a;
+	    
+	if( a% 2 == 0 && a!=0) 
+	{
+	cout <<"el numero par es: "<< a << endl;
+	
+	}
+	    
+	if( a% 2 !=0 && a!=0) 
+	{
+	cout <<"el numero impar es: "<< a << endl;
+	
+	}
+
+	return 0;
+}	
