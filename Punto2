@@ -2,25 +2,26 @@
 
 using namespace std;
 
-int a,b,c,d,i;
+int num1,num_par,num_impar,i;
 
-int main (  )
+int main()
 
 {
-	cout <<"ingrese su numero entero: ";
-	cin >> a;
-	    
-	if( a% 2 == 0 && a!=0) 
-	{
-	cout <<"el numero par es: "<< a << endl;
-	
-	}
-	    
-	if( a% 2 !=0 && a!=0) 
-	{
-	cout <<"el numero impar es: "<< a << endl;
-	
-	}
+    cout<<"ingrese su numero: ";
+    cin>>num1;
 
-	return 0;
-}	
+    for(i=0;i<=num1;i++)
+    {
+        if(i%2 != 0){
+            num_impar=num_impar+i;
+        }
+        else if(i%2 == 0){
+            num_par=num_par+i;
+        }
+    }
+    cout << "la suma de los pares es: " << num_par << endl;
+    cout << "la suma de los impares es: " << num_impar << endl;
+
+    return 0;
+
+}
