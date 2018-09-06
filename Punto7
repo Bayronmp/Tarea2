@@ -1,1 +1,31 @@
+#include <iostream>       
+#include <string>        
 
+
+using namespace std;
+
+int main ()
+{
+
+  string str;
+  char c;
+
+  cout<<"ingrese frase:";
+  cin>>str;
+
+
+  if (isupper(str[0])){
+  for(int j = 0; j<str.length(); j++){
+  c=tolower(str[j]);
+  cout << c;
+  }
+  }
+  else if(islower(str[0])){
+  for(int j = 0; j<str.length(); j++){
+  c=toupper(str[j]);
+  cout << c;
+  }
+  }
+
+  return 0;
+}
