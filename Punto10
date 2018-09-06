@@ -1,1 +1,24 @@
+#include <iostream>
 
+using namespace std;
+
+double expo_num(int, int);
+
+int main()
+
+	{
+    int expo, num1;
+    cout << "Digita el numero deseado: " << endl;
+    cin >> num1;
+    cout << "Digita la potencia: " << endl;
+    cin >> expo;
+    cout << num1 <<" exponente "<< expo <<" es igual a: " << expo_num (num1,expo) << endl;
+	}
+
+	double expo_num (int num1, int expo)
+	{
+ 		if (expo==0)
+     	return 1;
+ 		else
+     	return num1*(expo_num(num1,expo-1));
+	}
