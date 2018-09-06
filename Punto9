@@ -1,1 +1,34 @@
+#include <iostream>
+#include <string>
 
+
+using namespace std;
+
+int cambiovariable(int,int);
+
+int main()
+	{
+    int n1,n2;
+
+    cout<<"Introduzca el valor de numero1:";
+    cin>>n1;
+    cout<<"Introduzca el valor de numero2:";
+    cin>>n2;
+    cambiovariable(n1,n2);
+
+    return 0;
+	}
+
+int cambiovariable(int n1, int n2)
+{
+    int vaux;
+
+    vaux=n1;
+    n1 = n2;
+    n2 = vaux;
+
+    cout<<"el valor de numero1 ahora es: "<<n1<<endl;
+    cout<<"el valor de numero2 ahora es: "<<n2<<endl;
+
+    return vaux;
+}
